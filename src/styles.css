@@ -1,0 +1,69 @@
+/* Add application styles & imports to this file! */
+html, body{min-height: 100%; height: 100%; position:relative;} * {position:relative;}
+body {font-family: 'Mukta', sans-serif;}
+#UP {position:absolute; top:0; left:0; width: 100%; padding:20px; box-sizing: border-box; z-index:999;}
+
+
+#MAIN {padding-top:80px; height: 100%;}
+h1 {color:#585859; font-size:29px; font-family: 'Open Sans', sans-serif; font-weight: 700;}
+h2 {color:#585859; font-size:16px; font-family: 'Mukta', sans-serif;}
+a, a:hover {text-decoration:none;}
+.space {margin-bottom:35px;}
+
+/* -- Login --*/
+#LOGA , #LOGA .container, #LOGA .row, #CADASTRO {height: 100%;}
+#LOGA, #CADASTRO {background: url(https://github.com/oliveiracom/angular-fronttest/blob/master/img/bg-front.png?raw=true) no-repeat; background-position: calc(100% - 50%) calc(100% - -900px);  display:block;}
+
+::-webkit-input-placeholder {color: #CAD0DC; font-size:14px;}::-moz-placeholder {color:#CAD0DC;}:-ms-input-placeholder {color:#CAD0DC;} :-moz-placeholder {color: #CAD0DC;}
+
+
+.form-control {margin-bottom:10px; border-radius:6px; -webkit-border-radius:6px; -moz-border-radius:6px; border:1px solid #C2C2C2;}
+.forgot {color:#585859; font-family: 'Mukta', sans-serif; font-weight: 700; font-size:12px;}
+.btn-submit, .btn-submit a  {background:#7626FF; color:#fff; border:none; padding:17px 40px; border-radius:36px; -webkit-border-radius:36px; -moz-border-radius:36px; width: 100%; box-shadow:0 10px 39px #867FF67A; margin-bottom:20px; display:block; text-align:center;}
+.btn-submit a:hover {background:#867FF6;}
+.cad {color:#0077C5; font-size: 16px; font-family: 'Mukta', sans-serif;}
+.showpass {position: absolute; right:2px; top:2px; cursor:pointer; max-height: 98%;}
+
+/* -- Cad -- */
+#CADASTRO {padding-top:08%;}
+
+/* -- PLANS -- */
+.controlright {text-align:right;} .controlright a {border-radius:32px; border: solid 2px #EAEAEC; padding:4px 30px; color:#585859; width: 124px;}
+
+#HEADPLAN {background:url(https://github.com/oliveiracom/angular-fronttest/blob/master/img/bg-front.png?raw=true) center no-repeat; background-size:110% 110%; padding:15% 0; z-index:-99;}
+#HEADPLAN img {max-width:100%;}
+#HEADPLAN p {color:#FFFFFF; font-size:20px; font-family: 'Mukta', sans-serif; position:relative; width:100%;}
+#HEADPLAN a {border:2px solid #fff; border-radius:32px; -webkit-border-radius:32px; -moz-border-radius:32px; background:transparent; width:50%; display:block; margin:0 auto; padding:10px; color:#fff; font-size:16px;}
+#HEADPLAN a:hover {background:#fff; color:#733FFF;}
+
+#CARDS {padding-top:-50px; padding-bottom:80px; z-index: 99; background: #fff;}
+#CARDS .mussum:hover{background:#fff; color:}
+#CARDS h2 {color:#733FFF; font-size: 20px; font-family: 'Mukta', sans-serif; font-weight:700;}
+.oncard{background:#fff!important; border-radius:10px; -webkit-border-radius:10px; -moz-border-radius:10px; padding:35px 10px; box-shadow:0 4px 10px rgba(0,0,0,0.3); text-align:center; color:#585859; margin-bottom:25px; position:relative; z-index:999!important; background: url(https://github.com/oliveiracom/angular-fronttest/blob/master/img/bottom-card.png?raw=true) no-repeat; background-position: calc(100% - 50%) calc(100% - -100px);  display:block;}
+.oncard a {border:2px solid #F0F0F0; border-radius:32px; -webkit-border-radius:32px; -moz-border-radius:32px; background:#fff; width:50%; display:block; margin:0 auto; padding:10px; color:#585859; font-size:16px;}
+.oncard a:hover {background:#733FFF; color:#fff;}
+.chosen {z-index:99999!important;}
+.chosen a {background:#733FFF; color:#fff!important; border:none;}.chosen a:hover {background:#707070; color:#fff;}
+
+/* -- FOOTER -- */
+#FOOTER {border-top:2px solid #E0E1E2; padding:80px 0; margin-top:50px; background:url(https://github.com/oliveiracom/angular-fronttest/blob/master/img/bg-front.png?raw=true) right no-repeat; background-position: calc(100% - -300px) calc(100% - -800px); }
+#FOOTER a {color:#707070; font-size:16px;} #FOOTER a:hover {color:#733FFF;}
+
+
+/* -- testes -- */
+.ng-valid[required], .ng-valid.required  {  border-left: 5px solid #42A948;}
+.ng-invalid:not(form)  { border-left: 5px solid #a94442;}
+input[disabled] {background:#ccc;}
+
+.input-group-append .btn {background:#fff; border-top:1px solid #C2C2C2; border-right:1px solid #C2C2C2;  border-bottom:1px solid #C2C2C2; border-radius: 0 8px!important 8px!important 0; -webkit-border-radius:8px; -moz-border-radius:6px;} .ng-fa-icon {color:#C2C2C2;} .input-group-append .form-control{padding:.375rem .75rem!important;}
+
+/* === RESP === */
+@media only screen and (min-width : 768px) {
+  #LOGA {background-position: calc(100% - 50%) calc(100% - 600%);}
+  #HEADPLAN {background-size:50% 100%; z-index: -1; position:relative;}
+  #CARDS {margin-top:-150px; position:relative;}
+  .chosen {height:105%; z-index: 9999999; margin-top:-9%;}
+  .right {background-position: calc(100% - 10%) calc(100% - -150px);}
+  .left {background-position: calc(100% - 90%) calc(100% - -150px);}
+  #FOOTER {padding:150px 0;}
+}

@@ -1,0 +1,26 @@
+<div id="MAIN">
+<section id="LOGA">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-sm-5">
+          <h1>Entrar</h1>
+          <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)" action="plans">
+            <input type="email" id="email" name="email" formControlName="email" placeholder="E-mail" class="form-control">
+            <p><input type="password" id="password" formControlName="password" placeholder="Senha" class="form-control"><a class="showpass"><img src="https://github.com/oliveiracom/angular-fronttest/blob/master/img/eye.jpg?raw=true"></a></p>
+
+            <!--<show-hide-password size="sm" btnStyle="cta" [btnOutline]="false">
+            <input type="password2" id="password2" formControlName="password2" placeholder="Senha" class="form-control" style="padding:padding:.375rem .75rem;">
+            </show-hide-password>-->
+
+            <p class="text-right"><a href="" class="forgot">ESQUECEU A SENHA?</a></p>
+
+            <input type="submit" value="Entrar" class="btn-submit" [disabled]="!loginForm.valid">
+            <!--<p><a [routerLink]="['/como']" class="btn-submit">Entrar</a></p> -->
+          </form>
+          <p class="cad text-center"><a [routerLink]="['/cadastro']">Não tem uma conta ainda? Cadastre-se</a></p>
+      </div>
+    </div>
+  </div>
+
+</section>
+</div>
